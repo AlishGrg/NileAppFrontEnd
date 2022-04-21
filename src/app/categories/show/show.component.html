@@ -1,0 +1,17 @@
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <th>Product ID</th><th>Product Name</th> <th>Product Price</th>
+    </thead>
+    <tbody>
+            <tr *ngFor="let p of product">
+                <td>{{p.productId}}</td>
+                    <td>{{p.productName}}</td>
+                    <td>&#8377; {{p.productPrice}}</td>
+                    <!--
+                    <td> <a class="btn btn-warning" width="200px">Edit</a>
+                         <a class="btn btn-danger" width="200px">Delete </a>
+                    </td>
+                    -->
+            </tr>
+    </tbody>
+</table>

@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(174, 186, 197);
+    height: 3800px;
+    width: fit-content;
+}
+.navbar1{
+    color: white;
+    background-color: black;
+}
+.title{
+    color: white;
+    background-color: black;
+    padding-left: 1rem;
+}
+.title:hover{
+    border-color: white;
+    border-width: 2px;
+}
+.add{
+    padding-left: 2rem;
+}
+#searchBox{
+    width:50rem;
+    position: relative;
+    font-size: small;
+    color: rgb(87, 83, 83);
+}
+.textBox{
+    width: 610px;margin-left:40px;border-radius: 5px;
+}
+#allButton{
+position: absolute;
+float: left;
+left: 22px;
+top: 1.5px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+border-left:0px;
+border-top:0px;
+border-bottom:0px;
+border-right:1px;
+}
+#searchButton{
+    float:right;
+    left:920px;
+    top:14px;
+    position: absolute;
+    border: 0px;
+    background-color: orange;
+    border-radius: 0.5rem;
+    width:3rem;
+}
+.navbar2{
+    height: 2.5rem;
+    background-color: rgb(56, 62, 70);
+    color:white;
+}
+.cats{
+    color:white;
+}
+.cats:hover{
+    text-decoration-color: white;
+}
+.mainsec{
+    margin-top: 2rem;
+}
+.sec{
+    margin-top: 1rem;
+    margin-left:7rem;
+    height:218px;
+    width:70rem;
+    background-color: white;
+    border-radius: 10px;
+}
+.newsec {
+    height: 200px;
+    margin-top:2rem;
+    width: 84.5rem;
+    background-color: white;
+    float:left;
+    text-align: center;
+    
+}

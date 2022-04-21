@@ -1,0 +1,43 @@
+<html>
+    <head><title></title></head>
+    <body>
+        <div class="main">
+            <div style="font-size: xx-large;margin-left: 40rem;"><a style="text-decoration: none;color:black;"[routerLink]="'/home'"><span><b>nile</b><span style="font-size:small">.in</span></span></a></div>
+            <div class="secdiv">
+                <section class="sec">
+                    <form #signupForm = "ngForm" (ngSubmit)="onSubmit(signupForm)">
+                    <div style="padding-left: 1.5rem;padding-top: 0.5rem;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <span style="text-align: left; font-size: xx-large;">Create Account</span><br>
+                        <span style="font-size: small;"><b>Your name</b></span>
+                        <input type="text" name="username" style="width:300px;border:1px solid;border-radius: 4px; height: 30px;" ngModel required><br><br>
+                        <span style="font-size: small;"><b>Mobile number</b></span>
+                        <input type="text" name="mobile" style="width:300px;border:1px solid;border-radius: 4px; height: 30px; font-size: small;" placeholder="Mobile number" ngModel required><br><br>
+                        <span style="font-size: small;"><b>Email (Optional)</b></span>
+                        <input type="text" name="email" style="width:300px;border:1px solid;border-radius: 4px; height: 30px; font-size: small;" ngModel><br><br>
+                        <span style="font-size: small;"><b>Password</b></span>
+                        <input type="text" name="password" style="width:300px;border:1px solid;border-radius: 4px; height: 30px; font-size: small;" placeholder="At least 6 characters" ngModel required><br>
+                        <span style="font-size: small;">Passwords must be at least 6 characters</span><br><br>
+                        <!--   
+                        <span style="text-align:left;font-size: small;">We will send you a text to verify your phone.<br>Message and Data rates may apply.</span><br><br>
+                        -->
+                        <button style="width:300px;border:1px solid;border-radius: 4px;font-size: small; height:30px;background-color: rgb(250, 199, 106);" type="submit">Continue</button><br>
+                        <hr width="200px">
+                        <span style="text-align:left;font-size: small;">Already have an account?<a [routerLink]="'/signin'"> Sign in</a></span><br>
+                        <span style="text-align:left;font-size: small;">Buying for work?<a href=""> Create a free business account</a></span>
+                    </div>
+                    </form>
+                </section>
+            </div><br>
+            <hr width="900px">
+            <div style="text-align:center;font-size:small;">
+                <span><a style="text-decoration: none;"href="">Conditions of Use</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a style="text-decoration: none;"href="">Privacy Notice</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a style="text-decoration: none;"href="">Help</a></span><br><br>
+                <span>&copy; 2022, Nile.com, Inc. or its affiliates</span><br><br><br>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+<router-outlet></router-outlet>
+

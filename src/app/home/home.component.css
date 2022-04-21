@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(174, 186, 197);
+    height: 4800px;
+    width:fit-content;
+}
+.navbar1{
+    color: white;
+    background-color: black;
+}
+.title{
+    color: white;
+    background-color: black;
+    padding-left: 1rem;
+}
+.title:hover{
+    border-color: white;
+    border-width: 2px;
+}
+.add{
+    padding-left: 2rem;
+}
+#searchBox{
+    width:50rem;
+    position: relative;
+    font-size: small;
+    color: rgb(87, 83, 83);
+}
+.textBox{
+    width: 610px;margin-left:40px;border-radius: 5px;
+}
+#allButton{
+position: absolute;
+float: left;
+left: 22px;
+top: 1.5px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+border-left:0px;
+border-top:0px;
+border-bottom:0px;
+border-right:1px;
+}
+#searchButton{
+    float:right;
+    left:660px;
+    top:1px;
+    position: absolute;
+    border: 0px;
+    background-color: orange;
+    border-radius: 0.5rem;
+    width:3rem;
+}
+
+.navbar2{
+    height: 2.5rem;
+    background-color: rgb(56, 62, 70);
+    color:white;
+}
+.cats{
+    color:white;
+}
+.cats:hover{
+    text-decoration-color: white;
+}
+.mainsec{
+    margin-top: 0.2rem;
+}
+.mainsec1{
+    height: 400px;
+}
+.sec{
+    float:left;
+    margin-left: 1.5rem;
+    margin-top:2rem;
+    height:400px; 
+    width:311px;
+    font-size: larger;
+    background-color: white;
+}
+.sec4{
+    float:left;
+    margin-left: 1.5rem;
+    margin-top:2rem;
+    height:160px; 
+    width:311px;
+    font-size: larger;
+    background-color: white;
+}
+.signbutton {
+    border: 0px;
+    background-color: rgb(252, 217, 17);
+    border-radius: 10px;
+    width:280px;
+    text-align: center;
+    font-size: medium;
+}
+#signin{
+    padding-top: 20px;
+    text-align: center;
+}
+.mainsec2{
+    margin-top: 2rem;
+}
+.mainsec3{
+    margin-top: 2rem;
+}
+.newsec1 {
+    height: 350px;
+    margin-left: 1.5rem;
+    margin-top:2rem;
+    width: 1316px;
+    background-color: white;
+    float:left;
+    font-size: larger;
+}
+.mainsec4{
+    margin-top: 2rem;
+}
+.newsec2 {
+    height: 250px;
+    margin-left: 1.5rem;
+    margin-top:2rem;
+    width: 1316px;
+    background-color: white;
+    float:left;
+    font-size: larger;
+}
+.sec8{
+    float:left;
+    margin-left: 1.5rem;
+    margin-top:3rem;
+    height:400px; 
+    width:311px;
+    font-size: larger;
+    background-color: white;
+}
+.newsec3 {
+    height: 200px;
+    margin-top:2rem;
+    width: 85rem;
+    background-color: white;
+    float:left;
+    text-align: center;
+    
+}

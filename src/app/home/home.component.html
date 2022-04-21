@@ -1,0 +1,418 @@
+<html>
+<body>
+    <div>
+        <mat-toolbar>
+            <mat-toolbar-row class="navbar1">
+                <div class="title"><a [routerLink] = "'/home'" style="text-decoration:none;color:white;"><span><b>Nile.in</b></span></a></div>
+            <!--<div class="add"><span style="font-size:small; margin-left:23px;">Hello<br><mat-icon>place</mat-icon><span style="font-size: small;"><b>Select your Address</b></span></span></div>-->
+            <div style="padding-left: 11rem;">
+                <div id="searchBox">
+                    <input type="text" name="searchItems" class="textBox" placeholder="Search your products here">
+                    <!--
+                    <div><button id="allButton" value="product" name="category">All</button></div>
+                    -->
+                    <div><button id="searchButton"><div><mat-icon>search</mat-icon></div></button></div>
+                </div> 
+            </div>
+            <div>
+                <a [routerLink]="'/signin'" style="color:white;padding-left: 4rem;"><span style="font-size: small;">Hello, Sign In</span></a>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--
+            <div>
+                <span style="font-size:small">returns</span><br><span style="font-size: small;"><b>& Orders</b></span>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+            -->
+            <a [routerLink]="'/cart'" style="color:white;"><div>
+                <mat-icon>shopping_cart</mat-icon>
+                <span style="font-size: small;"><b>Cart</b></span>
+            </div>
+            </a>
+            </mat-toolbar-row>
+            <mat-toolbar-row class="navbar2">
+                <!--
+                <div><mat-icon style="margin-top: 0.6rem;">menu</mat-icon></div><div><span style="font-size: small"><b>All</b></span></div>
+                
+                <div style="margin-left: 1.5rem;"><span style="font-size: small">Best Sellers</span></div>
+                -->
+
+                <div style="margin-left: 1rem;"><a [routerLink]="'/categories/mobile'" class="cats"><span style="font-size: small">Mobiles</span></a></div>
+
+                <!--
+                <div style="margin-left: 1.5rem;"><a [routerLink]="" class="cats"><span style="font-size: small">Customer Service</span></a></div>
+                -->
+                
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/electronics'" class="cats"><span style="font-size: small">Electronics</span></a></div>
+                <!--
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/'" class="cats"><span style="font-size: small">Fashion</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/newreleases'" class="cats"><span style="font-size: small">New Releases</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/deals'" class="cats"><span style="font-size: small">Today's Deals</span></a></div>
+                -->
+                
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/books'" class="cats"><span style="font-size: small">Books</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/homenkitchen'" class="cats"><span style="font-size: small">Home & Kitchen</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/computers'" class="cats"><span style="font-size: small">Computers</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/toysngames'" class="cats"><span style="font-size: small">Toys & Games</span></a></div>
+            </mat-toolbar-row>
+        </mat-toolbar>
+    </div>
+    <div>
+    <div class="mainsec">
+        <div class="mainsec1">
+            <div class="sec">
+                <section>
+                    <div style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Top Trending this summer</b></span></div>
+                    <div style="padding-top: 2rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/ac1.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 2rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/ac2.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 9rem;padding-left: 1.5rem;"><span style="font-size: small;">AC| Best Sellers</span><span style="padding-left: 3rem;font-size: small;">AC| New launches</span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/r1.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 1.5rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/r2.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 8.5rem;padding-left: 1.5rem;"><span style="font-size: small;">Fridge| Best Sellers</span><span style="padding-left: 1.8rem;font-size: small; padding-top:1rem;">Fridge| New launches</span></div>     
+                </section>
+            </div>
+            <div class="sec">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Nile Pay | Book your<br>travel tickets </b></span></div>
+                    <div style="padding-top: 0.3rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/a1.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 0.3rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/a2.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 7.3rem;padding-left: 1.5rem;"><span style="font-size: small;">Flight tickets</span><span style="padding-left: 4.1rem;font-size: small;">Bus tickets</span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/a3.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 1.5rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/a4.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 8.5rem;padding-left: 1.5rem;"><span style="font-size: small;">Train tickets</span><span style="padding-left: 4.3rem;font-size: small; padding-top:1rem;">Travel products</span></div>
+                </section>
+            </div>
+            <div class="sec">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Automotive essentials | Up<br>to 60% off</b></span></div>
+                    <div style="padding-top: 0.3rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/auto1.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 0.3rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/auto2.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 7.3rem;padding-left: 1.5rem;"><span style="font-size: small;">Cleaning accessories</span><span style="padding-left: 1rem;font-size: small;">Tyre and rim care</span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/auto3.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 1.5rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/auto4.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 8.5rem;padding-left: 1.5rem;"><span style="font-size: small;">Helmets</span><span style="padding-left: 5.6rem;font-size: small; padding-top:1rem;">Vacuum cleaner</span></div>
+                </section>
+            </div>
+            <div class="sec4"><section><div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Sign in for your best<br>experience</b></span></div></section>
+                <div id="signin"><a [routerLink]="'/signin'"><button class="signbutton"><span style="font-size: small;">Sign in securely</span></button></a></div>
+            </div>
+        </div>
+        <div class="mainsec2">
+            <div class="sec">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Upgrade your home |<br>Amazon brands and more</b></span></div>
+                    <div style="padding-top: 0.3rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/u1.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 0.3rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/u2.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 7.3rem;padding-left: 1.5rem;"><span style="font-size: small;">Smart LED TVs</span><span style="padding-left: 3.2rem;font-size: small;">Appliances</span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/u3.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 1.5rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/u4.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 8.5rem;padding-left: 1.5rem;"><span style="font-size: small;">Furniture</span><span style="padding-left: 5.5rem;font-size: small; padding-top:1rem;">Kitchen products</span></div>
+                </section>
+            </div>
+            <div class="sec">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Shop by category</b></span></div>
+                    <div style="padding-top: 2rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/c1.jpg" width="145px" height="115px"></div>
+                    <div style="padding-top: 2rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:135px"><img src="../assets/c2.jpg" width="145px" height="115px"></div>
+                    <div style="padding-top: 9rem;padding-left: 3rem;"><span style="font-size: small;">Fresh</span><span style="padding-left: 7rem;font-size: small;">Mobiles</span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/c3.jpg" width="145px" height="115px"></div>
+                    <div style="padding-top: 1.5rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/c4.jpg" width="145px" height="115px"></div>
+                    <div style="padding-top: 8.5rem;padding-left: 3rem;"><span style="font-size: small;">Fashion</span><span style="padding-left: 6.3rem;font-size: small; padding-top:1rem;">Electronics</span></div>
+                </section>
+            </div>
+            <div class="sec">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Revamp your home in style</b></span></div>
+                    <div style="padding-top: 2rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/revamp1.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 2rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/revamp2.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 9rem;padding-left: 1.5rem;"><span style="font-size: small;">Bedsheets &amp; more</span><span style="padding-left: 2.1rem;font-size: small;">Home decorations</span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/revamp3.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 1.5rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/revamp4.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 8.5rem;padding-left: 1.5rem;"><span style="font-size: small;">Home storage</span><span style="padding-left: 3.5rem;font-size: small; padding-top:1rem;">Lighting solutions</span></div>
+                </section>
+            </div>
+            <div class="sec">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Everything for the<br>newborn & expecting</b></span></div>
+                    <div style="padding-top: 0.3rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/n1.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 0.3rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/n2.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 7.3rem;padding-left: 1.5rem;"><span style="font-size: small;">Baby Products</span><span style="padding-left: 3.4rem;font-size: small;">Baby Wishlist</span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/n3.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 1.5rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/n4.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 8.5rem;padding-left: 1.5rem;"><span style="font-size: small;">Expecting mothers</span><span style="padding-left: 1.9rem;font-size: small; padding-top:1rem;">Explore more</span></div>
+                </section>
+            </div>
+        </div>
+        <div class="mainsec3">
+            <div class="newsec1">
+                <section>
+                    <div style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Today's Deals</b></span></div>
+                    <div style="padding-top: 2rem;padding-left: 1.5rem; float:left; height: 150px;width:190px;"><img src="../assets/t1.jpg" width="200px" height="150px"></div>
+                    <div style="padding-top: 2rem;padding-left: 3rem; position:relative;float:left; height: 150px;width:190px"><img src="../assets/t2.jpg" width="200px" height="150px"></div>
+                    <div style="padding-top: 2rem;padding-left: 4.5rem; position:relative;float:left; height: 150px;width:190px"><img src="../assets/t3.jpg" width="200px" height="150px"></div>
+                    <div style="padding-top: 2rem;padding-left: 6rem; position:relative;float:left; height: 150px;width:190px"><img src="../assets/t4.jpg" width="200px" height="150px"></div>
+                    <div style="padding-top: 2rem;padding-left: 7.5rem; position:relative;float:left; height: 150px;width:120px"><img src="../assets/t5.jpg" width="120px" height="150px"></div>
+                    <div style="padding-top: 2rem;padding-left: 9.5rem; position:relative;float:left; height: 150px;width:190px"><img src="../assets/t6.jpg" width="200px" height="150px"></div> 
+                    <div style="padding-top: 14rem;padding-left: 2.5rem;">
+                        <span style="font-size: small;font-weight: 550;">&#x20B9;57,990.00 - &#x20B9;1,39,990.00</span>
+                        <span style="padding-left: 4.5rem;font-size: small;font-weight: 550;">&#x20B9;37,990.00 - &#x20B9;69,990.00</span>
+                        <span style="padding-left: 5.5rem;font-size: small;font-weight: 550;">&#x20B9;990.00 - &#x20B9;1,990.00</span>
+                        <span style="padding-left: 5.5rem;font-size: small;font-weight: 550;">&#x20B9;9,990.00 - &#x20B9;2,39,990.00</span>
+                        <span style="padding-left: 4.5rem;font-size: small;font-weight: 550;">&#x20B9;39,990.00</span>
+                        <span style="padding-left: 7rem;font-size: small;font-weight: 550;">&#x20B9;1,990.00 - &#x20B9;4,990.00</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="mainsec4">
+            <div class="newsec2">
+                <section>
+                    <div style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Up to 60% off on home products | Small businesses</b></span></div>
+                    <div style="padding-top: 1rem;padding-left: 1.5rem; float:left; height: 165px;width:190px;"><img src="../assets/h1.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 3rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/h2.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 4.5rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/h3.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 6rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/h4.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 7.5rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/h5.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 9rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/h6.jpg" width="190px" height="165px"></div> 
+                </section>
+            </div>
+        </div>
+        <div class="mainsec5">
+            <div class="sec">
+                <section><div  style="padding-top:1.5rem;padding-left: 1.5rem;">
+                    <span><b>Latest electronics to make<br>your Vishu special</b></span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 255px;width:265px;"><img src="../assets/le.jpg" width="265px" height="255px"></div>
+                </section>
+            </div>
+            <div class="sec">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Tech trends that will<br>dominate 2022</b></span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 255px;width:265px;"><img src="../assets/tech.jpg" width="265px" height="255px"></div>
+                </section>
+            </div>
+            <div class="sec">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Make your parenting<br>journey easier</b></span></div>
+                    <div style="padding-top: 0.3rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/pj1.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 0.3rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/pj2.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 7.3rem;padding-left: 1.5rem;"><span style="font-size: small;">Prenatal essentials</span><span style="padding-left: 1.8rem;font-size: small;">Baby essentials</span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/pj3.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 1.5rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/pj4.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 8.5rem;padding-left: 1.5rem;"><span style="font-size: small;">Baby essentials</span><span style="padding-left: 3rem;font-size: small; padding-top:1rem;">Explore more</span></div>
+                </section>
+            </div>
+            <div class="sec">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Up to 60% off | Kitchen<br>organizers from local...</b></span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 255px;width:265px;"><img src="../assets/ke.jpg" width="265px" height="255px"></div>
+                </section>
+            </div>
+        </div>
+        <div class="mainsec6">
+            <div class="newsec2">
+                <section>
+                    <div style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Up to 60% off | Tropical hues home furnishing from local shops</b></span></div>
+                    <div style="padding-top: 1rem;padding-left: 1.5rem; float:left; height: 165px;width:190px;"><img src="../assets/th1.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 3rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/th2.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 4.5rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/th3.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 6rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/th4.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 7.5rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/th5.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 9rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/th6.jpg" width="190px" height="165px"></div> 
+                </section>
+            </div>
+        </div>
+        <div class="mainsec7">
+            <div class="newsec2">
+                <section>
+                    <div style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Up to 50% off on kitchen & dining products | Small businesses</b></span></div>
+                    <div style="padding-top: 1rem;padding-left: 1.5rem; float:left; height: 165px;width:190px;"><img src="../assets/k1.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 3rem; position:relative;float:left; height: 165px;width:170px"><img src="../assets/k2.jpg" width="170px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 4.5rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/k3.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 6rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/k4.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 7.5rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/k5.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 9rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/k6.jpg" width="190px" height="165px"></div> 
+                </section>
+            </div>
+        </div>
+        <div class="mainsec8">
+            <div class="sec8">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Up to 50% off |<br>Photography essentials</b></span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 255px;width:265px;"><img src="../assets/pe1.jpg" width="265px" height="255px"></div>
+                </section>
+            </div>
+            <div class="sec8">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Flat ₹200 back | Weekend<br>grocery sale | Amazon...</b></span></div>
+                    <div style="padding-top: 0.3rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/f1.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 0.3rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/f2.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 7.3rem;padding-left: 1.5rem;"><span style="font-size: small;">Upto 40% off</span><span style="padding-left: 4rem;font-size: small;">Upto 60% off</span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/f3.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 1.5rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/f4.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 8.5rem;padding-left: 1.5rem;"><span style="font-size: small;">Explore all deals</span><span style="padding-left: 2.8rem;font-size: small; padding-top:1rem;">Fruits and veggies</span></div>
+                </section>
+            </div>
+            <div class="sec8">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Up to 60% off | Fitness<br>essentials to set up your...</b></span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 255px;width:265px;"><img src="../assets/fit.jpg" width="265px" height="255px"></div>
+                </section>
+            </div>
+            <div class="sec8">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Food, fitness and WFH<br>essentials | Amazon...</b></span></div>
+                    <div style="padding-top: 0.3rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/ff1.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 0.3rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/ff2.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 7.3rem;padding-left: 1.5rem;"><span style="font-size: small;">Breakfast essentials</span><span style="padding-left: 1.4rem;font-size: small;">WFH essentials</span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/ff3.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 1.5rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/ff4.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 8.5rem;padding-left: 1.5rem;"><span style="font-size: small;">Protein supplements</span><span style="padding-left: 1.2rem;font-size: small; padding-top:1rem;">Fitness essentials</span></div>
+                </section>
+            </div>
+        </div>
+        <div class="mainsec9">
+            <div class="newsec2">
+                <section>
+                    <div style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Frequently repurchased in Pet Supplies</b></span></div>
+                    <div style="padding-top: 1rem;padding-left: 3rem; float:left; height: 170px;width:140px;"><img src="../assets/pet1.jpg" width="140px" height="170px"></div>
+                    <div style="padding-top: 1rem;padding-left: 4rem; position:relative;float:left; height: 170px;width:140px"><img src="../assets/pet2.jpg" width="140px" height="170px"></div>
+                    <div style="padding-top: 1rem;padding-left: 5rem; position:relative;float:left; height: 170px;width:140px"><img src="../assets/pet3.jpg" width="140px" height="170px"></div>
+                    <div style="padding-top: 1rem;padding-left: 6rem; position:relative;float:left; height: 170px;width:140px"><img src="../assets/pet4.jpg" width="140px" height="170px"></div>
+                    <div style="padding-top: 1rem;padding-left: 7rem; position:relative;float:left; height: 170px;width:190px"><img src="../assets/pet5.jpg" width="190px" height="170px"></div>
+                    <div style="padding-top: 1rem;padding-left: 8rem; position:relative;float:left; height: 170px;width:140px"><img src="../assets/pet6.jpg" width="140px" height="170px"></div>
+                    <div style="padding-top: 1rem;padding-left: 9rem; position:relative;float:left; height: 170px;width:190px"><img src="../assets/pet7.jpg" width="190px" height="170px"></div>  
+                </section>
+            </div>
+        </div>
+        <div class="mainsec10">
+            <div class="newsec2">
+                <section>
+                    <div style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Up to 50% off on electronic products | Small businesses</b></span></div>
+                    <div style="padding-top: 1rem;padding-left: 1.5rem; float:left; height: 165px;width:220px;"><img src="../assets/e1.jpg" width="220px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 3rem; position:relative;float:left; height: 165px;width:160px"><img src="../assets/e2.jpg" width="160px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 4.5rem; position:relative;float:left; height: 165px;width:200px"><img src="../assets/e3.jpg" width="200px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 6rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/e4.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 7.5rem; position:relative;float:left; height: 165px;width:200px"><img src="../assets/e5.jpg" width="200px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 9rem; position:relative;float:left; height: 165px;width:160px"><img src="../assets/e6.jpg" width="160px" height="165px"></div> 
+                </section>
+            </div>
+        </div>
+        <div class="mainsec11">
+            <div class="sec">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Up to 70% off | Clearance<br>store</b></span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 255px;width:265px;"><img src="../assets/clear.jpg" width="265px" height="255px"></div>
+                </section>
+            </div>
+            <div class="sec">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Stay protected | Masks,<br>PPE kits & more from...</b></span></div>
+                    <div style="padding-top: 0.3rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/p1.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 0.3rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/p2.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 7.3rem;padding-left: 1.5rem;"><span style="font-size: small;">Masks</span><span style="padding-left: 6.2rem;font-size: small;">PPE kits &amp; face shields</span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/p3.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 1.5rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/p4.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 8.5rem;padding-left: 1.5rem;"><span style="font-size: small;">Sanitizers</span><span style="padding-left: 5rem;font-size: small; padding-top:1rem;">Vitamins</span></div>
+                </section>
+            </div>
+            <div class="sec">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Play like a pro</b></span></div>
+                    <div style="padding-top: 2rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/pp1.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 2rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/pp2.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 9rem;padding-left: 1.5rem;"><span style="font-size: small;">Consoles</span><span style="padding-left: 5.3rem;font-size: small;">Top chart games</span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/pp3.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 1.5rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/pp4.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 8.5rem;padding-left: 1.5rem;"><span style="font-size: small;">Accessories</span><span style="padding-left: 4.3rem;font-size: small; padding-top:1rem;">Digital wallet &amp; pass</span></div>
+                </section>
+            </div>
+            <div class="sec">
+                <section>
+                    <div  style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Electronics devices for<br>home office</b></span></div>
+                    <div style="padding-top: 0.3rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/ho1.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 0.3rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/ho2.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 7.3rem;padding-left: 1.5rem;"><span style="font-size: small;">Smartwatches</span><span style="padding-left: 3.5rem;font-size: small;">Tablets</span></div>
+                    <div style="padding-top: 1.5rem;padding-left: 1.5rem; float:left; height: 115px;width:125px;"><img src="../assets/ho3.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 1.5rem;position:relative; margin-right: 1.5rem;float:right; height: 115px;width:125px"><img src="../assets/ho4.jpg" width="125px" height="115px"></div>
+                    <div style="padding-top: 8.5rem;padding-left: 1.5rem;"><span style="font-size: small;">Laptops</span><span style="padding-left: 5.7rem;font-size: small; padding-top:1rem;">Monitors</span></div>
+                </section>
+            </div>
+        </div>
+        <div class="mainsec12">
+            <div class="newsec2">
+                <section>
+                    <div style="padding-top:1.5rem;padding-left: 1.5rem;"><span><b>Up to 60% off | Car & bike accessories & more</b></span></div>
+                    <div style="padding-top: 1rem;padding-left: 1.5rem; float:left; height: 165px;width:140px;"><img src="../assets/ca1.jpg" width="140px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 3rem; position:relative;float:left; height: 165px;width:190px"><img src="../assets/ca2.jpg" width="190px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 4.5rem; position:relative;float:left; height: 165px;width:130px"><img src="../assets/ca3.jpg" width="130px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 6rem; position:relative;float:left; height: 165px;width:170px"><img src="../assets/ca4.jpg" width="170px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 7.5rem; position:relative;float:left; height: 165px;width:140px"><img src="../assets/ca5.jpg" width="140px" height="165px"></div>
+                    <div style="padding-top: 1rem;padding-left: 9rem; position:relative;float:left; height: 165px;width:180px"><img src="../assets/ca6.jpg" width="180px" height="165px"></div> 
+                    <div style="padding-top: 1rem;padding-left: 9rem; position:relative;float:left; height: 165px;width:180px"><img src="../assets/ca7.jpg" width="180px" height="165px"></div>
+                </section>
+            </div>
+        </div>
+        <div class="mainsec13">
+            <div class="newsec3">
+                <section><br>
+                    <hr><br>
+                    <div>
+                    <a [routerLink]="'/signin'"><button style="font-size: small;font-weight: bold; width: 250px;border-radius: 5px;background-color: rgb(252, 176, 78);border:2px solid orange">Sign in</button></a><br>
+                    <span style="font-size: smaller;">New customer? <a [routerLink]="'/signup'" style="text-decoration:none">Start here.</a></span>
+                    </div>
+                    <hr>
+                </section>
+                <div style="background-color: rgb(56, 62, 70);color: white;height: 40px">
+                    <div style="padding-top: 7px;"><span style="font-size: small;">Back to top</span></div>
+                </div>
+                <div style="background-color: rgb(41, 47, 54);color: white;height: 300px;">
+                    <div style="padding-top: 4rem;">
+                        <div style="float:left;padding-left: 12rem;text-align: left;">
+                            <span style="font-weight:500;">Get to know Us</span><br>
+                            <span style="font-size: small;">About Us</span><br>
+                            <span style="font-size: small;">Careers</span><br>
+                            <span style="font-size: small;">Press Releases</span><br>
+                            <span style="font-size: small;">Nile Cares</span><br>
+                            <span style="font-size: small;">Give a Smile</span><br>
+                            <span style="font-size: small;">Nile Science</span>
+                        </div>
+                        <div style="float:left;padding-left: 9rem; text-align: left;">
+                            <span style="font-weight:500;">Connect with Us</span><br>
+                            <span style="font-size: small;">Facebook</span><br>
+                            <span style="font-size: small;">Twitter</span><br>
+                            <span style="font-size: small;">Instagram</span>
+                        </div>
+                        <div style="float:left;padding-left: 9rem;text-align: left;">
+                            <span style="font-weight:500;">Make Money with Us</span><br>
+                            <span style="font-size: small;">Sell on Nile</span><br>
+                            <span style="font-size: small;">Sell under Nile Accelerator</span><br>
+                            <span style="font-size: small;">Nile Global Selling</span><br>
+                            <span style="font-size: small;">Become an Affiliate</span><br>
+                            <span style="font-size: small;">Fulfillment by Nile</span><br>
+                            <span style="font-size: small;">Advertise Your Products</span><br>
+                            <span style="font-size: small;">Nile Pay on Merchants</span>
+                        </div>
+                        <div style="float:left;padding-left: 9rem;text-align: left;">
+                            <span style="font-weight:500;">Let Us Help You</span><br>
+                            <span style="font-size: small;">COVID-19 and Amazon</span><br>
+                            <span style="font-size: small;">Your Account</span><br>
+                            <span style="font-size: small;">Returns Centre</span><br>
+                            <span style="font-size: small;">100% Purchase Protection</span><br>
+                            <span style="font-size: small;">Nile App Download</span><br>
+                            <span style="font-size: small;">Nile Assistant Download</span><br>
+                            <span style="font-size: small;">Help</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: rgb(25, 28, 32);color: white;height: 50px;">
+                    <div style="text-align:center; padding-top: 1rem;">
+                        <span style="font-size: small;">&copy; 2022, Nile.com, Inc. or its Affiliates</span>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+<router-outlet></router-outlet>

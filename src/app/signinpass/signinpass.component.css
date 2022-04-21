@@ -1,0 +1,11 @@
+.main{
+}
+.sec {
+    height:300px;
+    width: 350px;
+    border:1px solid rgb(82, 78, 78);
+    border-radius: 5px;
+}
+.secdiv{
+    margin-left: 32rem;
+}

@@ -1,0 +1,75 @@
+<body>
+    <div>
+        <mat-toolbar>
+            <mat-toolbar-row class="navbar1">
+                <div class="title"><a [routerLink] = "'/home'" style="text-decoration:none;color:white;"><span><b>Nile.in</b></span></a></div>
+           <!-- <div class="add"><span style="font-size:small; margin-left:23px;">Hello<br><mat-icon>place</mat-icon><span style="font-size: small;"><b>Select your Address</b></span></span></div> -->
+            <div style="padding-left: 11rem;">
+                <div id="searchBox">
+                    <input type="text" name="searchItems" class="textBox" placeholder="Search your products here">
+                    <!--
+                    <div><button id="allButton" value="product" name="category">All</button></div>
+                    -->
+                    <div><button id="searchButton"><div><mat-icon>search</mat-icon></div></button></div>
+                </div> 
+            </div>
+            
+            <div>
+                <span style="font-size: small; padding-left:12rem;"><a [routerLink]="'/signin'" style="color:white;">Hello, Sign In</a></span>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--
+            <div>
+                <span style="font-size:small">returns</span><br><span style="font-size: small;"><b>& Orders</b></span>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div>
+                <mat-icon>shopping_cart</mat-icon>
+                <span style="font-size: small;"><b>Cart</b></span>
+            </div>-->
+            </mat-toolbar-row>
+            <mat-toolbar-row class="navbar2">
+                <!--
+                <div><mat-icon style="margin-top: 0.6rem;">menu</mat-icon></div><div><span style="font-size: small"><b>All</b></span></div>
+                
+                <div style="margin-left: 1.5rem;"><span style="font-size: small">Best Sellers</span></div>
+                -->
+
+                <div style="margin-left: 1rem;"><a [routerLink]="'/categories/mobile'" class="cats"><span style="font-size: small">Mobiles</span></a></div>
+
+                <!--
+                <div style="margin-left: 1.5rem;"><a [routerLink]="" class="cats"><span style="font-size: small">Customer Service</span></a></div>
+                -->
+                
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/electronics'" class="cats"><span style="font-size: small">Electronics</span></a></div>
+                <!--
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/'" class="cats"><span style="font-size: small">Fashion</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/newreleases'" class="cats"><span style="font-size: small">New Releases</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/deals'" class="cats"><span style="font-size: small">Today's Deals</span></a></div>
+                -->
+                
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/books'" class="cats"><span style="font-size: small">Books</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/homenkitchen'" class="cats"><span style="font-size: small">Home & Kitchen</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/computers'" class="cats"><span style="font-size: small">Computers</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/toysngames'" class="cats"><span style="font-size: small">Toys & Games</span></a></div>
+            </mat-toolbar-row>
+        </mat-toolbar>
+    </div>
+    <div>
+        <mat-card style="margin-top:4rem; margin-left:20rem;width:max-content;height:25rem;border-radius: 20px;">
+            <div>
+                <div style="text-align: center;"><p style="font-weight: 550;">Choose from the following Payment options</p></div><br>
+                <div style="float:left;">
+                    <span style="margin-left:4rem;"><b>UPI</b></span><br><br>
+                    <div style="margin-left: 2rem;"><input type="radio" value="gpay" name="pay">&nbsp;<span>Google Pay</span></div><br>
+                    <div style="margin-left: 2rem;"><input type="radio" value="phonepe" name="pay">&nbsp;<span>PhonePe</span></div><br>
+                    <div style="margin-left: 2rem;"><input type="radio" value="paytm" name="pay">&nbsp;<span>Paytm</span></div><br>
+                </div>
+                <div style="float:left;padding-left: 10rem;padding-top: 5rem;"><span><b>(Or)</b></span></div>
+                <div style="float:left;padding-left: 10rem;padding-top: 5rem;padding-right: 2rem;">
+                    <input type="radio" name="pay">&nbsp;&nbsp;<span><b>Pay On Delivery</b></span><br><br>
+                </div>
+            </div>
+            <div style="margin-top: 15rem;text-align: center;"><button type="submit" class="btn btn-info">Proceed to Pay</button></div>
+        </mat-card>
+    </div>
+    </body>
+

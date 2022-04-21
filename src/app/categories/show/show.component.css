@@ -1,0 +1,17 @@
+body {
+    height: max-content;
+    background-color: cadetblue;
+}
+.div{
+    padding-top: 2rem;
+    padding-left: 10rem;
+}
+.card{
+    height: 200px;
+    width: 1000px;
+    background-color: white;
+    border-radius: 10px;
+}
+p{
+    padding-left: 2rem;
+}

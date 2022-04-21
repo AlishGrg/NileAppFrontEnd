@@ -1,0 +1,38 @@
+<html>
+    <head><title></title></head>
+    <body>
+        <div class="main">
+            <div style="margin-left: 40rem; font-size: xx-large;"><a style="text-decoration: none;color: black;"[routerLink]="'/home'"><span><b>nile</b><span style="font-size:small">.in</span></span></a></div>
+            <div class="secdiv">
+                <form #signinForm="ngForm" (ngSubmit)="onSubmit(signinForm)">
+                <section class="sec">
+                    <div style="padding-left: 1.5rem;padding-top: 0.5rem;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <span style="text-align: left; font-size: xx-large;">Sign-In</span><br>
+                        <span style="font-size: small;"><b>Mobile phone number</b></span>
+                        <input name="mobile" type="text" style="width:300px;border:1px solid;border-radius: 4px; height: 30px;" ngModel required><br><br>
+                        <span style="font-size: small;"><b>Password</b></span>
+                        <input name="password" type="text" style="width:300px;border:1px solid;border-radius: 4px; height: 30px;" ngModel required><br><br>
+                        <button style="width:300px;border:1px solid;border-radius: 4px;font-size: small; height:30px;background-color: rgb(250, 199, 106);" type="submit">Continue</button><br><br>
+                        <span style="font-size: small;">By continuing, you agree to Nile's <a href="" style="text-decoration: none;">Conditions of<br>Use</a> and <a style="text-decoration: none;"href="">Privacy Notice.</a></span><br><br>
+                        <span style="text-align:left;font-size: small;"><a style="text-decoration: none;"href="">Need help?</a></span>
+                    </div>
+                </section>
+                </form>
+            </div><br>
+            <div style="margin-left: 32rem;">
+                <span style="font-size: small; margin-left: 8rem; position: fixed;">New to Nile?</span><br>
+                <a [routerLink]="'/signup'"><button style="width: 350px;border: 1px solid; border-radius: 4px;font-size: small; height:30px;">Create your nile account</button></a>
+            </div>
+            <hr width="900px">
+            <div>
+                <div style="margin-left: 35rem;font-size: small;"><span><a style="text-decoration: none;"href="">Conditions of Use</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a style="text-decoration: none;"href="">Privacy Notice</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a style="text-decoration: none;"href="">Help</a></span><br></div>
+                <div style="padding-left: 36.2rem; font-size: small;"><span>&copy; 2022, Nile.com, Inc. or its affiliates</span></div>
+            </div>
+            
+        </div>
+    </body>
+</html>
+
+
+
+<router-outlet></router-outlet>

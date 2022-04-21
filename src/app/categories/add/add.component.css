@@ -1,0 +1,13 @@
+body{
+    background-color: cadetblue;
+}
+.cardDiv{
+    padding-top: 3rem;
+    text-align: center;
+    padding-left: 28rem;
+}
+.card{
+    width:25rem;
+    height:30rem;
+    border-radius: 10px;
+}

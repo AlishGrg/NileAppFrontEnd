@@ -1,0 +1,32 @@
+<body>
+    <form (ngSubmit)="onSubmit(productForm)" #productForm = "ngForm" novalidate>
+        <div class="cardDiv">
+            <mat-card class="card">
+                <mat-card-title>
+                    ADD PRODUCTS
+                </mat-card-title><br>
+                <div style="text-align: left">
+                    <span style="font-weight: 500;">Category:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="categoryId" ngModel>
+                        <option value="">--Choose One Option--</option>
+                        <option value="1" >Books</option>
+                        <option value="2" >Computers</option>
+                        <option value="3" >Electronics</option>
+                        <option value="4" >Home & Kitchen</option>
+                        <option value="5" >Mobile</option>
+                        <option value="6" >Toys & Games</option>
+                    </select>
+                </div><br>
+                <div style="text-align: left">
+                    <span style="font-weight: 500;">Product Name:</span><br><br>
+                    <input type="text" name="productName" style="width: 23rem;height:2.5rem;" ngModel required>
+                </div><br>
+                <div style="text-align: left">
+                    <span style="font-weight: 500;">Product Price(&#8377;):</span><br><br>
+                    <input type="text" name="productPrice" style="width: 23rem;height:2.5rem;" ngModel required>
+                </div><br><br>
+                    <button class="btn btn-success" type="submit" style="width:250px;" [disabled]="!productForm.valid">Submit</button>
+            </mat-card>
+        </div>
+    </form>
+</body>

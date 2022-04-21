@@ -1,0 +1,394 @@
+<body>
+    <div>
+        <mat-toolbar>
+            <mat-toolbar-row class="navbar1">
+                <div class="title"><a [routerLink] = "'/home'" style="text-decoration:none;color:white;"><span><b>Nile.in</b></span></a></div>
+            <!--<div class="add"><span style="font-size:small; margin-left:23px;">Hello<br><mat-icon>place</mat-icon><span style="font-size: small;"><b>Select your Address</b></span></span></div> -->
+            <div style="padding-left: 11rem;">
+                <div id="searchBox">
+                    <input type="text" name="searchItems" class="textBox" placeholder="Search your products here">
+                    <!--<div><button id="allButton" value="product" name="category">All</button></div> -->
+                </div> 
+                <div><button id="searchButton"><div><mat-icon>search</mat-icon></div></button></div>
+            </div>
+            <div>
+                <a [routerLink]="'/signin'" style="color:white;padding-left: 10rem;"><span style="font-size: small;">Hello, Sign In</span></a>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--
+            <div>
+                <span style="font-size:small">returns</span><br><span style="font-size: small;"><b>& Orders</b></span>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <a [routerLink]="'/cart'" style="color:white;"><div>
+                <mat-icon>shopping_cart</mat-icon>
+                <span style="font-size: small;"><b>Cart</b></span>
+            </div></a> -->
+            </mat-toolbar-row>
+            <mat-toolbar-row class="navbar2">
+                <!--
+                <div><mat-icon style="margin-top: 0.6rem;">menu</mat-icon></div><div><span style="font-size: small"><b>All</b></span></div>
+
+                <div style="margin-left: 1.5rem;"><span style="font-size: small">Best Sellers</span></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="" class="cats"><span style="font-size: small">Customer Service</span></a></div>
+                
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/fashion'" class="cats"><span style="font-size: small">Fashion</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/newreleases'" class="cats"><span style="font-size: small">New Releases</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/deals'" class="cats"><span style="font-size: small">Today's Deals</span></a></div>
+                -->
+                <div style="margin-left: 1rem;"><a [routerLink]="'/categories/electronics'" class="cats"><span style="font-size: small">Electronics</span></a></div>
+                <div style="margin-left: 1rem;"><a [routerLink]="'/categories/mobile'" class="cats"><span style="font-size: small">Mobiles</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/books'" class="cats"><span style="font-size: small">Books</span></a></div>
+                <!--<div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/homenkitchen'" class="cats"><span style="font-size: small">Home & Kitchen</span></a></div>-->
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/computers'" class="cats"><span style="font-size: small">Computers</span></a></div>
+                <div style="margin-left: 1.5rem;"><a [routerLink]="'/categories/toysngames'" class="cats"><span style="font-size: small">Toys & Games</span></a></div>
+            </mat-toolbar-row>
+        </mat-toolbar>
+    </div>
+    <div class="mainsec">
+        <div>
+            <section class="sec">
+                <div style="padding-left: 1rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h1.jpg" height="218px" width="184px" style="float:left;position:relative;">
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>Clear Water Bottle</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:2.5rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+        <div>
+            <section class="sec">
+                <div style="padding-left: 1.8rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h2.jpg" height="184px" width="184px" style="float:left;position:relative;margin-top: 1rem;">
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>Electric Egg Boiler</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:1.7rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+        <div>
+            <section class="sec">
+                <div style="padding-left: 1rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h3.jpg" height="184px" width="184px" style="float:left;position:relative;">
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>Cloth Hot Air Dryer</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:2.4rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+        <div>
+            <section class="sec">
+                <div style="padding-left: 1rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h4.jpg" height="95px" width="184px" style="float:left;position:relative;margin-top:3rem;" >
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>Hot Cloth Iron</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:2.5rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+        <div>
+            <section class="sec">
+                <div style="padding-left: 3rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h5.jpg" height="180px" width="84px" style="float:left;position:relative;">
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>Hot Water Heater</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:6.7rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+        <div>
+            <section class="sec">
+                <div style="padding-left: 1rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h6.jpg" height="218px" width="184px" style="float:left;position:relative;">
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>Glass Jar for Water</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:2.4rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+        <div>
+            <section class="sec">
+                <div style="padding-left: 1rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h7.jpg" height="205px" width="184px" style="float:left;position:relative;">
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>LEDs for Home Decoring</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:2.4rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+        <div>
+            <section class="sec">
+                <div style="padding-left: 1rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h8.jpg" height="218px" width="184px" style="float:left;position:relative;">
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>Candles for Lights in Night</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:2.4rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+        <div>
+            <section class="sec">
+                <div style="padding-left: 1rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h9.jpg" height="218px" width="184px" style="float:left;position:relative;">
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>Diya for Puja</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:2.4rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+        <div>
+            <section class="sec">
+                <div style="padding-left: 1rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h10.jpg" height="218px" width="184px" style="float:left;position:relative;">
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>Candle Cover for lights</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:2.4rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+        <div>
+            <section class="sec">
+                <div style="padding-left: 2rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h11.jpg" height="100px" width="184px" style="float:left;position:relative;margin-top: 3rem;">
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>Frying Pan for Kitchen</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:1.4rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+        <div>
+            <section class="sec">
+                <div style="padding-left: 2rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h12.jpg" height="100px" width="184px" style="float:left;position:relative;margin-top:3rem;">
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>Clear Water Bottles</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:1.4rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+        <div>
+            <section class="sec">
+                <div style="padding-left: 1rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h13.jpg" height="90px" width="184px" style="float:left;position:relative;margin-top: 3rem;">
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>Tiffins for various purposes</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:2.4rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+        <div>
+            <section class="sec">
+                <div style="padding-left: 1rem;width:13rem;">
+                    <img src="../assets/homenkitchen/h14.jpg" height="190px" width="184px" style="float:left;position:relative;margin-top: 0.8rem;">
+                </div>
+                <div style="padding-left: 15rem;float:left;position:absolute;padding-top:1rem;">
+                    <p>Plastic Wear for Kitchen items</p>
+                    <p style="color:chocolate">&#8377; 599</p>
+                    <p>Get it by <b>Friday</b></p>
+                    <p>FREE Delivery by Nile</p>
+                </div>
+                <div style="float:left;margin-left:2.4rem;margin-top: 10rem;">
+                    <a [routerLink]="'/buy'"><button class="btn btn-success" style="width:200px;">Buy Now</button></a>
+                </div>
+                <!--
+                <div style="float:left;margin-left:1rem;margin-top: 10rem;">
+                    <button class="btn btn-primary" style="width:130px;">Add to Cart</button>
+                </div>
+                -->
+            </section>
+        </div>
+    </div>
+    <div class="newsec">
+    <div style="background-color: rgb(56, 62, 70);color: white;height: 40px">
+        <div style="padding-top: 7px;"><span style="font-size: small;">Back to top</span></div>
+    </div>
+    <div style="background-color: rgb(41, 47, 54);color: white;height: 300px;">
+        <div style="padding-top: 4rem;">
+            <div style="float:left;padding-left: 12rem;text-align: left;">
+                <span style="font-weight:500;">Get to know Us</span><br>
+                <span style="font-size: small;">About Us</span><br>
+                <span style="font-size: small;">Careers</span><br>
+                <span style="font-size: small;">Press Releases</span><br>
+                <span style="font-size: small;">Nile Cares</span><br>
+                <span style="font-size: small;">Give a Smile</span><br>
+                <span style="font-size: small;">Nile Science</span>
+            </div>
+            <div style="float:left;padding-left: 9rem; text-align: left;">
+                <span style="font-weight:500;">Connect with Us</span><br>
+                <span style="font-size: small;">Facebook</span><br>
+                <span style="font-size: small;">Twitter</span><br>
+                <span style="font-size: small;">Instagram</span>
+            </div>
+            <div style="float:left;padding-left: 9rem;text-align: left;">
+                <span style="font-weight:500;">Make Money with Us</span><br>
+                <span style="font-size: small;">Sell on Nile</span><br>
+                <span style="font-size: small;">Sell under Nile Accelerator</span><br>
+                <span style="font-size: small;">Nile Global Selling</span><br>
+                <span style="font-size: small;">Become an Affiliate</span><br>
+                <span style="font-size: small;">Fulfillment by Nile</span><br>
+                <span style="font-size: small;">Advertise Your Products</span><br>
+                <span style="font-size: small;">Nile Pay on Merchants</span>
+            </div>
+            <div style="float:left;padding-left: 9rem;text-align: left;">
+                <span style="font-weight:500;">Let Us Help You</span><br>
+                <span style="font-size: small;">COVID-19 and Amazon</span><br>
+                <span style="font-size: small;">Your Account</span><br>
+                <span style="font-size: small;">Returns Centre</span><br>
+                <span style="font-size: small;">100% Purchase Protection</span><br>
+                <span style="font-size: small;">Nile App Download</span><br>
+                <span style="font-size: small;">Nile Assistant Download</span><br>
+                <span style="font-size: small;">Help</span>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: rgb(25, 28, 32);color: white;height: 50px;">
+        <div style="text-align:center; padding-top: 1rem;">
+            <span style="font-size: small;">&copy; 2022, Nile.com, Inc. or its Affiliates</span>
+        </div>
+    </div>
+    </div>
+</body>
+<router-outlet></router-outlet>
+
